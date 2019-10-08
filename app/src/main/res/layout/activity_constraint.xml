@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- TODO : add Guidelines and Constraints to match the given layout
+          NB: be sure to change the layout file in MainActivity -->
 
     <TextView
+        android:id="@+id/layout_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
         android:text="Layout Play"
         android:textSize="36sp"
         android:textStyle="normal" />
 
     <ImageView
-        android:layout_width="175dp"
-        android:layout_height="250dp"
-        app:srcCompat="@android:color/holo_blue_bright" />
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        app:srcCompat="@android:color/holo_red_dark" />
-
-    <ImageView
-        android:layout_width="175dp"
-        android:layout_height="match_parent"
-        app:srcCompat="@android:color/darker_gray" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
