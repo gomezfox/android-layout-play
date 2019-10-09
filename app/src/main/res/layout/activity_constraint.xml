@@ -16,7 +16,9 @@
         android:layout_height="wrap_content"
         android:text="Layout Play"
         android:textSize="36sp"
-        android:textStyle="normal" />
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/image1"
@@ -27,28 +29,78 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Button"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="377dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        tools:layout_editor_absoluteY="359dp" />
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/holo_red_dark"/>
 
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="351dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="465dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="351dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="325dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="77dp" />
 
 
 </android.support.constraint.ConstraintLayout>
